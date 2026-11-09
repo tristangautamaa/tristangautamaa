@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 498" width="800" height="498" role="img" aria-label="Timeline and experience: Kawan Lama Group data analyst intern, Sensify business development, Architech co-founder, Multimedia Nusantara University student">
+<title>Timeline and experience: Kawan Lama Group data analyst intern, Sensify business development, Architech co-founder, Multimedia Nusantara University student</title>
+<style>
+text{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono","DejaVu Sans Mono",monospace}
+.fg{fill:#0d1117}.mu{fill:#57606a}.ac{fill:#0f766e}
+.ln{stroke:#0d1117}.lm{stroke:#8c959f}.la{stroke:#0f766e}
+.nf{fill:none}
+.h0{fill:#0d1117;fill-opacity:.07}.h1{fill:#0d1117;fill-opacity:.28}.h2{fill:#0d1117;fill-opacity:.5}.h3{fill:#0d1117;fill-opacity:.75}.h4{fill:#0d1117;fill-opacity:1}
+.tk{fill:#0d1117;fill-opacity:.08;stroke:#0d1117;stroke-width:1}
+.bar{fill:#0d1117}
+@media (prefers-color-scheme:dark){
+.fg{fill:#f0f6fc}.mu{fill:#8b949e}.ac{fill:#2dd4bf}
+.ln{stroke:#f0f6fc}.lm{stroke:#6e7681}.la{stroke:#2dd4bf}
+.h0{fill:#f0f6fc;fill-opacity:.08}.h1{fill:#f0f6fc;fill-opacity:.3}.h2{fill:#f0f6fc;fill-opacity:.52}.h3{fill:#f0f6fc;fill-opacity:.76}.h4{fill:#f0f6fc;fill-opacity:1}
+.tk{fill:#f0f6fc;fill-opacity:.1;stroke:#f0f6fc}
+.bar{fill:#f0f6fc}
+}
+@keyframes flow{to{stroke-dashoffset:-16}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes rise{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+.flow{stroke-dasharray:3 5;animation:flow 1.4s linear infinite}
+.cur{animation:blink 1.1s steps(1) infinite}
+.dot{animation:pulse 2s ease-in-out infinite}
+.gx{transform-box:fill-box;transform-origin:left center;animation:grow .9s ease-out both}
+.gy{transform-box:fill-box;transform-origin:center bottom;animation:rise .9s ease-out both}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<text x="8" y="34" class="fg" font-size="40" font-weight="300" textLength="48.0" lengthAdjust="spacing">05</text>
+<text x="72" y="27" class="fg" font-size="11.5" font-weight="700" letter-spacing="4" textLength="94.1" lengthAdjust="spacing">THE ROUTE</text>
+<line x1="182.1" y1="23" x2="700.4" y2="23" class="ln" stroke-width="1" />
+<text x="792" y="27" class="mu" font-size="10.5" font-weight="400" text-anchor="end" textLength="75.6" lengthAdjust="spacing">~/05-journey</text>
+<text x="8" y="76" class="fg" font-size="10.5" font-weight="600" letter-spacing="2" textLength="130.8" lengthAdjust="spacing">THE ROUTE SO FAR</text>
+<text x="792" y="76" class="fg" font-size="10.5" font-weight="600" text-anchor="end" letter-spacing="2" textLength="56.1" lengthAdjust="spacing">FIG. 02</text>
+<line x1="8" y1="86" x2="792" y2="86" class="ln" stroke-width="1.2" />
+<line x1="8" y1="168" x2="778" y2="168" class="ln" stroke-width="1.4" />
+<path d="M778 163 L788 168 L778 173" class="ln nf" stroke-width="1.4"/>
+<circle cx="104" cy="168" r="4" class="fg"/>
+<line x1="104" y1="162" x2="104" y2="144" class="lm" stroke-width="1" />
+<text x="104" y="120" class="fg" font-size="10.5" font-weight="700" text-anchor="middle" letter-spacing="1" textLength="28.2" lengthAdjust="spacing">2021</text>
+<text x="104" y="136" class="mu" font-size="9.5" font-weight="400" text-anchor="middle" textLength="125.4" lengthAdjust="spacing">github account created</text>
+<circle cx="224" cy="168" r="4" class="fg"/>
+<line x1="224" y1="174" x2="224" y2="192" class="lm" stroke-width="1" />
+<text x="224" y="208" class="fg" font-size="10.5" font-weight="700" text-anchor="middle" letter-spacing="1" textLength="28.2" lengthAdjust="spacing">2024</text>
+<text x="224" y="222" class="mu" font-size="9.5" font-weight="400" text-anchor="middle" textLength="119.7" lengthAdjust="spacing">first public projects</text>
+<circle cx="344" cy="168" r="4" class="fg"/>
+<line x1="344" y1="162" x2="344" y2="144" class="lm" stroke-width="1" />
+<text x="344" y="120" class="fg" font-size="10.5" font-weight="700" text-anchor="middle" letter-spacing="1" textLength="28.2" lengthAdjust="spacing">2025</text>
+<text x="344" y="136" class="mu" font-size="9.5" font-weight="400" text-anchor="middle" textLength="91.2" lengthAdjust="spacing">ML + mobile apps</text>
+<circle cx="464" cy="168" r="4" class="fg"/>
+<line x1="464" y1="174" x2="464" y2="192" class="lm" stroke-width="1" />
+<text x="464" y="208" class="fg" font-size="10.5" font-weight="700" text-anchor="middle" letter-spacing="1" textLength="57.4" lengthAdjust="spacing">FEB 2026</text>
+<text x="464" y="222" class="mu" font-size="9.5" font-weight="400" text-anchor="middle" textLength="91.2" lengthAdjust="spacing">kawan lama group</text>
+<circle cx="584" cy="168" r="4" class="fg"/>
+<line x1="584" y1="162" x2="584" y2="144" class="lm" stroke-width="1" />
+<text x="584" y="120" class="fg" font-size="10.5" font-weight="700" text-anchor="middle" letter-spacing="1" textLength="57.4" lengthAdjust="spacing">MAY 2026</text>
+<text x="584" y="136" class="mu" font-size="9.5" font-weight="400" text-anchor="middle" textLength="148.2" lengthAdjust="spacing">sensify · client platforms</text>
+<circle cx="684" cy="168" r="4" class="fg"/>
+<line x1="684" y1="174" x2="684" y2="192" class="lm" stroke-width="1" />
+<text x="684" y="208" class="fg" font-size="10.5" font-weight="700" text-anchor="middle" letter-spacing="1" textLength="57.4" lengthAdjust="spacing">OCT 2026</text>
+<text x="684" y="222" class="mu" font-size="9.5" font-weight="400" text-anchor="middle" textLength="131.1" lengthAdjust="spacing">energy-dss · peak month</text>
+<circle cx="772" cy="168" r="4" class="ac dot"/>
+<line x1="772" y1="162" x2="772" y2="144" class="lm" stroke-width="1" />
+<text x="792" y="120" class="ac" font-size="10.5" font-weight="700" text-anchor="end" letter-spacing="1" textLength="20.9" lengthAdjust="spacing">NOW</text>
+<text x="792" y="136" class="mu" font-size="9.5" font-weight="400" text-anchor="end" textLength="79.8" lengthAdjust="spacing">ATS · research</text>
+<line x1="8" y1="252" x2="792" y2="252" class="ln" stroke-width="1.2" />
+<text x="8" y="276" class="fg" font-size="10.5" font-weight="700" letter-spacing="2" textLength="81.0" lengthAdjust="spacing">EXPERIENCE</text>
+<text x="10" y="304" class="mu" font-size="9.5" font-weight="600" letter-spacing="1" textLength="126.3" lengthAdjust="spacing">FEB 2026 – FEB 2027</text>
+<text x="188" y="304" class="fg" font-size="12.5" font-weight="700" textLength="142.5" lengthAdjust="spacing">Data Analyst Intern</text>
+<text x="188" y="321" class="mu" font-size="10.5" font-weight="400" textLength="504.0" lengthAdjust="spacing">Kawan Lama Group — operations officer Feb – Apr 2026, data analyst from May 2026</text>
+<line x1="8" y1="335" x2="792" y2="335" class="lm" stroke-width="0.8" />
+<text x="10" y="354" class="mu" font-size="9.5" font-weight="600" letter-spacing="1" textLength="92.8" lengthAdjust="spacing">MAY 2026 – NOW</text>
+<text x="188" y="354" class="fg" font-size="12.5" font-weight="700" textLength="262.5" lengthAdjust="spacing">Business Development Representative</text>
+<text x="188" y="371" class="mu" font-size="10.5" font-weight="400" textLength="396.9" lengthAdjust="spacing">Sensify — part-time · AI-powered storefronts for growing brands</text>
+<line x1="8" y1="385" x2="792" y2="385" class="lm" stroke-width="0.8" />
+<text x="10" y="404" class="mu" font-size="9.5" font-weight="600" letter-spacing="1" textLength="45.9" lengthAdjust="spacing">ONGOING</text>
+<text x="188" y="404" class="fg" font-size="12.5" font-weight="700" textLength="75.0" lengthAdjust="spacing">Co-founder</text>
+<text x="188" y="421" class="mu" font-size="10.5" font-weight="400" textLength="434.7" lengthAdjust="spacing">Architech Technology Solutions — custom software company in Indonesia</text>
+<line x1="8" y1="435" x2="792" y2="435" class="lm" stroke-width="0.8" />
+<text x="10" y="454" class="mu" font-size="9.5" font-weight="600" letter-spacing="1" textLength="59.3" lengthAdjust="spacing">EDUCATION</text>
+<text x="188" y="454" class="fg" font-size="12.5" font-weight="700" textLength="52.5" lengthAdjust="spacing">Student</text>
+<text x="188" y="471" class="mu" font-size="10.5" font-weight="400" textLength="327.6" lengthAdjust="spacing">Multimedia Nusantara University — Jakarta, Indonesia</text>
+</svg>
