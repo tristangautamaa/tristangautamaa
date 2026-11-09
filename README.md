@@ -11,7 +11,7 @@
 <a href="https://sensify.id"><img src="assets/pill-sensify.svg" alt="Sensify" height="58" /></a>
 <a href="https://griyaplast.shop"><img src="assets/pill-griyaplast.svg" alt="Griyaplast" height="58" /></a>
 
-<br/><br/>
+<br/>
 
 <img src="assets/now.svg" alt="Now: Data Analyst Intern at Kawan Lama Group and Business Development at Sensify." width="100%" />
 
