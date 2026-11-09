@@ -2,16 +2,25 @@
 """Generates the monochrome 'technical document' SVG sections for the profile README.
 
 Each SVG is theme-adaptive via prefers-color-scheme and has subtle, reduced-motion-safe animation.
-Usage: gen.py OUTDIR
+Telemetry numbers come from assets/data.json (refreshed by scripts/fetch_data.py).
+Usage: gen.py [OUTDIR [DATAFILE]]
 """
+import datetime as dt
+import json
 import math
+import os
 import sys
 from xml.sax.saxutils import escape
 
-OUT = sys.argv[1] if len(sys.argv) > 1 else "assets"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, "assets")
+DATA_FILE = sys.argv[2] if len(sys.argv) > 2 else os.path.join(ROOT, "assets", "data.json")
 W = 800
 L, R = 8, 792
-SNAPSHOT = "2026-11-09"
+
+with open(DATA_FILE, encoding="utf-8") as _f:
+    DATA = json.load(_f)
+SNAPSHOT = DATA["generated"]
 
 FONT = 'ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono","DejaVu Sans Mono",monospace'
 
@@ -296,12 +305,36 @@ def projects():
 
 
 # ---------------------------------------------------------------- telemetry
-YEARS = [("2021", 2), ("2022", 2), ("2023", 2), ("2024", 43), ("2025", 264), ("2026", 2323)]
-LANGS = [("JavaScript", 36.9), ("TypeScript", 18.2), ("Python", 15.5), ("CSS", 6.2),
-         ("Jupyter", 5.7), ("Blade", 4.6), ("PHP", 4.5), ("C++", 1.8)]
-LEVELS_2026 = "00000000000000000000000100110000000011202002000000000000000000000010100100001001111211110124112220000000000000000000000100001000101101111001012442220000000000000000000000000011000010210011110111224213000000000000000000000001000010101100211011111113343440000000000000000000000000000101010021111220210142241200000000000000001000000000011011000000000001011100040000000"
+YEARS = [(y, int(v)) for y, v in sorted(DATA["years"].items())]
+LANGS = [(n, float(p)) for n, p in DATA["languages"]]
+WIN_START = dt.date.fromisoformat(DATA["window"]["start"])
+COUNTS = [int(c) for c in DATA["window"]["counts"]]
 MONTHS = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]
-MDAYS = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+
+def derive_levels(counts):
+    """Fallback when data.json has no GitHub-provided levels: quartiles of the non-zero days."""
+    nz = sorted(c for c in counts if c)
+    if not nz:
+        return "0" * len(counts)
+    q = [nz[int(len(nz) * f)] for f in (0.25, 0.5, 0.75)]
+    return "".join("0" if c == 0 else "1" if c <= q[0] else "2" if c <= q[1] else "3" if c <= q[2] else "4" for c in counts)
+
+
+LEVELS = DATA["window"].get("levels") or derive_levels(COUNTS)
+
+
+def month_totals():
+    tot = {}
+    for i, c in enumerate(COUNTS):
+        d = WIN_START + dt.timedelta(days=i)
+        tot[(d.year, d.month)] = tot.get((d.year, d.month), 0) + c
+    return tot
+
+
+def peak_month():
+    (yy, mm), n = max(month_totals().items(), key=lambda kv: kv[1])
+    return f"{MONTHS[mm - 1]} {yy}", n
 
 
 def telemetry():
@@ -309,7 +342,10 @@ def telemetry():
     b = [s]
     y += 8
     # KPI strip
-    kp = [("2,323", "CONTRIBUTIONS · 2026"), ("114", "ACTIVE DAYS · 2026"), ("1,093", "PEAK MONTH · OCT 2026"), ("14", "PUBLIC REPOS")]
+    pk_label, pk_n = peak_month()
+    total = sum(COUNTS)
+    kp = [(f"{total:,}", "CONTRIBUTIONS · 12 MO"), (f"{sum(1 for c in COUNTS if c)}", "ACTIVE DAYS · 12 MO"),
+          (f"{pk_n:,}", f"PEAK MONTH · {pk_label}"), (f"{DATA['public_repos']}", "PUBLIC REPOS")]
     cw = (R - L) / 4
     b.append(rect(L, y, R - L, 78, "ln nf", 1))
     for i, (n, lab) in enumerate(kp):
@@ -334,9 +370,9 @@ def telemetry():
         h = max(2.0, 118 * v / maxv)
         b.append(f'<rect x="{x:.1f}" y="{base - h:.1f}" width="{bw}" height="{h:.1f}" class="bar gy" style="animation-delay:{i * 0.08:.2f}s"/>')
         b.append(T(x + bw / 2, base - h - 8, f"{v:,}", "fg", 10, "middle", "600"))
-        b.append(T(x + bw / 2, base + 16, yr, "mu", 9.5, "middle"))
+        b.append(T(x + bw / 2, base + 16, yr + ("*" if i == len(YEARS) - 1 else ""), "mu", 9.5, "middle"))
     b.append(line(L, base + 3, L + pw, base + 3, "lm", 1))
-    b.append(T(L, base + 36, "trend — accelerating", "mu", 9.5))
+    b.append(T(L, base + 36, f"* {YEARS[-1][0]} year to date", "mu", 9.5))
 
     # right: languages
     rx = L + pw + 24
@@ -348,25 +384,32 @@ def telemetry():
         yy = y + 36 + i * 20
         b.append(T(rx, yy, lg.upper(), "fg", 9.5, weight="600", ls=0.8))
         b.append(rect(track_x, yy - 10, track_w, 12, "ln nf", 1))
-        b.append(f'<rect x="{track_x}" y="{yy - 10}" width="{track_w * pct / 40:.1f}" height="12" class="bar gx" style="animation-delay:{i * 0.07:.2f}s"/>')
+        b.append(f'<rect x="{track_x}" y="{yy - 10}" width="{track_w * pct / max(40.0, LANGS[0][1]):.1f}" height="12" class="bar gx" style="animation-delay:{i * 0.07:.2f}s"/>')
         b.append(T(R, yy, f"{pct:.1f}%", "mu", 9.5, "end"))
     y = base + 36 + 34
 
     # heatmap
-    b.append(T(L, y, "DAILY ACTIVITY — 2026", "fg", 10.5, weight="700", ls=2))
+    b.append(T(L, y, "DAILY ACTIVITY — LAST 12 MONTHS", "fg", 10.5, weight="700", ls=2))
     b.append(line(L, y + 9, R, y + 9, "ln", 1))
     gx0, gy0 = L + 34, y + 46
     pitch, cell = 13.7, 11
-    start_dow = 4  # 2026-01-01 is a Thursday
-    for i, ch in enumerate(LEVELS_2026):
+    start_dow = (WIN_START.weekday() + 1) % 7  # Sunday = row 0, like GitHub
+    for i, ch in enumerate(LEVELS):
         col, row = (i + start_dow) // 7, (i + start_dow) % 7
         b.append(f'<rect x="{gx0 + col * pitch:.1f}" y="{gy0 + row * pitch:.1f}" width="{cell}" height="{cell}" rx="1.5" class="h{ch}"/>')
-    # month labels
-    d = 0
-    for m in range(12):
-        col = (d + start_dow) // 7
-        b.append(T(gx0 + col * pitch, y + 32, MONTHS[m], "mu", 8.5, ls=1))
-        d += MDAYS[m]
+    # month labels: the 1st of each month, plus the starting month when there is room
+    last_col = -99
+    marks = []
+    if WIN_START.day != 1:
+        marks.append((0, WIN_START.month))
+    for i in range(len(COUNTS)):
+        d = WIN_START + dt.timedelta(days=i)
+        if d.day == 1:
+            marks.append(((i + start_dow) // 7, d.month))
+    for col, mo in marks:
+        if col - last_col >= 3:
+            b.append(T(gx0 + col * pitch, y + 32, MONTHS[mo - 1], "mu", 8.5, ls=1))
+            last_col = col
     for r_, lab in ((1, "MON"), (3, "WED"), (5, "FRI")):
         b.append(T(L, gy0 + r_ * pitch + 9, lab, "mu", 8.5, ls=1))
     yb = gy0 + 7 * pitch + 14
@@ -376,8 +419,8 @@ def telemetry():
     for k in range(5):
         b.append(f'<rect x="{lx + k * 16}" y="{yb}" width="11" height="11" rx="1.5" class="h{k}"/>')
     b.append(T(lx + 5 * 16 + 4, yb + 9, "MORE", "mu", 8.5, ls=1))
-    b.append(T(L, yb + 9, f"snapshot {SNAPSHOT} · includes private repositories · counts only", "mu", 9))
-    return svg(int(yb + 30), "\n".join(b), "GitHub telemetry: 2,323 contributions in 2026, yearly growth, language mix of public repos and a daily activity heatmap")
+    b.append(T(L, yb + 9, f"snapshot {SNAPSHOT} · " + ("includes private repositories · " if DATA.get("includes_private") else "") + "counts only", "mu", 9))
+    return svg(int(yb + 30), "\n".join(b), f"GitHub telemetry: {total:,} contributions in the last 12 months, yearly growth, language mix of public repos and a daily activity heatmap")
 
 
 # ---------------------------------------------------------------- route
@@ -393,7 +436,7 @@ def route():
         (344, "2025", "ML + mobile apps", "up"),
         (464, "FEB 2026", "kawan lama group", "down"),
         (584, "MAY 2026", "sensify · client platforms", "up"),
-        (684, "OCT 2026", "energy-dss · peak month", "down"),
+        (684, peak_month()[0], "peak month", "down"),
     ]
     b.append(line(L, ay, R - 14, ay, "ln", 1.4))
     b.append(f'<path d="M{R - 14} {ay - 5} L{R - 4} {ay} L{R - 14} {ay + 5}" class="ln nf" stroke-width="1.4"/>')
@@ -470,7 +513,7 @@ def footer():
     b.append(f'<circle cx="{L + 14}" cy="42" r="4" class="ac dot"/>')
     b.append(T(L + 36, 38, "STATUS — BUILDING", "fg", 10.5, weight="700", ls=2))
     b.append(T(L + 36, 56, "forever learning.", "mu", 11))
-    b.append(T(R, 38, "tristangautama.xyz  ·  Jakarta, ID  ·  © 2026", "fg", 11, "end"))
+    b.append(T(R, 38, f"tristangautama.xyz  ·  Jakarta, ID  ·  © {dt.date.fromisoformat(SNAPSHOT).year}", "fg", 11, "end"))
     return svg(72, "\n".join(b), "Status: building. Forever learning. tristangautama.xyz, Jakarta, Indonesia")
 
 

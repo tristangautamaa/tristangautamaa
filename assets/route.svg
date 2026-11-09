@@ -59,7 +59,7 @@ text{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberatio
 <circle cx="684" cy="168" r="4" class="fg"/>
 <line x1="684" y1="174" x2="684" y2="192" class="lm" stroke-width="1" />
 <text x="684" y="208" class="fg" font-size="10.5" font-weight="700" text-anchor="middle" letter-spacing="1" textLength="57.4" lengthAdjust="spacing">OCT 2026</text>
-<text x="684" y="222" class="mu" font-size="9.5" font-weight="400" text-anchor="middle" textLength="131.1" lengthAdjust="spacing">energy-dss · peak month</text>
+<text x="684" y="222" class="mu" font-size="9.5" font-weight="400" text-anchor="middle" textLength="57.0" lengthAdjust="spacing">peak month</text>
 <circle cx="772" cy="168" r="4" class="ac dot"/>
 <line x1="772" y1="162" x2="772" y2="144" class="lm" stroke-width="1" />
 <text x="792" y="120" class="ac" font-size="10.5" font-weight="700" text-anchor="end" letter-spacing="1" textLength="20.9" lengthAdjust="spacing">NOW</text>
