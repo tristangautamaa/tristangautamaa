@@ -71,7 +71,7 @@ def hero():
     b.append(T(28, sy, "Data analyst and product builder in Jakarta.", "s", 16.5, ICE))
     b.append(T(28, sy + 23, "Dashboards, analytics and web apps for real businesses.", "s", 14, GLACIER))
     # stat cards
-    stats = [(f"{D.TOTAL:,}", "CONTRIBS · 12M"), (f"{D.ACTIVE}", "ACTIVE DAYS"), (f"{D.PUBLIC_REPOS}", "PUBLIC REPOS"), ("3", "LIVE PRODUCTS")]
+    stats = [(f"{D.TOTAL:,}", "CONTRIBS · 12M"), (f"{D.ACTIVE}", "ACTIVE DAYS"), (f"{D.PUBLIC_REPOS}", "PUBLIC REPOS"), (f"{D.LONGEST}", "DAY STREAK")]
     cw, gap, y0 = 99, 10, 366
     for i, (n, lab) in enumerate(stats):
         x = 28 + i * (cw + gap)

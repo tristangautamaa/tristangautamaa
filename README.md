@@ -39,7 +39,7 @@
 
 <br/>
 
-<img src="assets/stack.svg" alt="04 tech stack: Java, Python, TypeScript, JavaScript, PHP, C++, Dart, HTML, CSS, React, Next.js, Flutter, FastAPI, Laravel, Node.js, Tailwind, Vite, Three.js, pandas, NumPy, scikit-learn, Jupyter, Streamlit, Git, GitHub, Docker, Vercel, Firebase, Supabase." width="100%" />
+<img src="assets/stack.svg" alt="04 tech stack: Java, Python, TypeScript, JavaScript, PHP, C++, Dart, HTML, CSS, React, Next.js, Flutter, FastAPI, Laravel, Node.js, Tailwind, Vite, Three.js, SQL, Excel, Power BI, Tableau, pandas, NumPy, scikit-learn, Jupyter, Streamlit, Git, GitHub, Docker, Vercel, Firebase, Supabase." width="100%" />
 
 <br/>
 

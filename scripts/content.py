@@ -35,7 +35,8 @@ STACK = [
                    ("cplusplus", "C++"), ("dart", "Dart"), ("html5", "HTML"), ("css3", "CSS")]),
     ("FRAMEWORKS & LIBRARIES", [("react", "React"), ("nextjs", "Next.js"), ("flutter", "Flutter"), ("fastapi", "FastAPI"), ("laravel", "Laravel"),
                                 ("nodejs", "Node.js"), ("tailwindcss", "Tailwind"), ("vite", "Vite"), ("threejs", "Three.js")]),
-    ("DATA & ML", [("pandas", "pandas"), ("numpy", "NumPy"), ("scikitlearn", "scikit-learn"), ("jupyter", "Jupyter"), ("streamlit", "Streamlit")]),
+    ("DATA & ANALYTICS", [("sql", "SQL"), ("excel", "Excel"), ("powerbi", "Power BI"), ("tableau", "Tableau"), ("pandas", "pandas"),
+                         ("numpy", "NumPy"), ("scikitlearn", "scikit-learn"), ("jupyter", "Jupyter"), ("streamlit", "Streamlit")]),
     ("TOOLS & PLATFORMS", [("git", "Git"), ("github", "GitHub"), ("docker", "Docker"), ("vercel", "Vercel"), ("firebase", "Firebase"), ("supabase", "Supabase")]),
 ]
 
