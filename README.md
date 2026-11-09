@@ -4,16 +4,16 @@
 
 <br/>
 
-<a href="https://tristangautama.xyz"><img src="assets/pill-portfolio.svg" alt="Portfolio" height="36" /></a>
-<a href="https://www.linkedin.com/in/tristangautama"><img src="assets/pill-linkedin.svg" alt="LinkedIn" height="36" /></a>
-<a href="https://github.com/tristangautamaa?tab=repositories"><img src="assets/pill-github.svg" alt="GitHub repositories" height="36" /></a>
-<a href="https://migravia.id"><img src="assets/pill-migravia.svg" alt="Migravia" height="36" /></a>
-<a href="https://sensify.id"><img src="assets/pill-sensify.svg" alt="Sensify" height="36" /></a>
-<a href="https://griyaplast.shop"><img src="assets/pill-griyaplast.svg" alt="Griyaplast" height="36" /></a>
+<a href="https://tristangautama.xyz"><img src="assets/pill-portfolio.svg" alt="Portfolio" height="58" /></a>
+<a href="https://www.linkedin.com/in/tristangautama"><img src="assets/pill-linkedin.svg" alt="LinkedIn" height="58" /></a>
+<a href="https://github.com/tristangautamaa?tab=repositories"><img src="assets/pill-github.svg" alt="GitHub repositories" height="58" /></a>
+<a href="https://migravia.id"><img src="assets/pill-migravia.svg" alt="Migravia" height="58" /></a>
+<a href="https://sensify.id"><img src="assets/pill-sensify.svg" alt="Sensify" height="58" /></a>
+<a href="https://griyaplast.shop"><img src="assets/pill-griyaplast.svg" alt="Griyaplast" height="58" /></a>
 
 <br/><br/>
 
-<img src="assets/now.svg" alt="Now: data analyst intern at Kawan Lama Group and business development at Sensify." width="100%" />
+<img src="assets/now.svg" alt="Now: Data Analyst Intern at Kawan Lama Group and Business Development at Sensify." width="100%" />
 
 </div>
 

@@ -26,20 +26,15 @@ def heading_svg(num, label, title, note):
 
 
 # ------------------------------------------------------------------ hero
-def _chip(x, y, key, label, delay, dur):
-    w = 14 + 18 + 8 + tw(label, "sb", 12.5) + 16
-    g = (
-        f'<g class="floaty" style="animation-delay:{delay}s;animation-duration:{dur}s">'
-        f'<rect x="{x}" y="{y}" width="{w:.0f}" height="32" rx="16" fill="{NAVY_D}" fill-opacity=".92" stroke="{ICE}" stroke-opacity=".22"/>'
-        f"{icon(key, x + 12, y + 7, 18)}"
-        f"{T(x + 38, y + 21, label, 'sb', 12.5, ICE)}</g>"
-    )
-    return g, w
-
-
 def hero():
-    H = 440
     b = []
+    stats = [(f"{D.TOTAL:,}", "CONTRIBS · 12M"), (f"{D.ACTIVE}", "ACTIVE DAYS"), (f"{D.PUBLIC_REPOS}", "PUBLIC REPOS"), (f"{D.LONGEST}", "DAY STREAK")]
+    size = round(min(84, 716 / tw("Tristan Gautama", "d", 1)), 1)
+    y_eyebrow = 126
+    y_name = y_eyebrow + size + 22
+    y_sub = y_name + 52
+    y_cards = y_sub + 52
+    H = int(y_cards + 56 + 30)
     defs = (
         f'<clipPath id="hc"><rect width="{W}" height="{H}" rx="18"/></clipPath>'
         f'<pattern id="hg" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="{GLACIER}" stroke-opacity=".10"/></pattern>'
@@ -49,7 +44,7 @@ def hero():
     )
     b.append(
         f'<g clip-path="url(#hc)"><rect width="{W}" height="{H}" fill="{NAVY}"/><rect width="{W}" height="{H}" fill="url(#hg)"/>'
-        f'<circle cx="690" cy="430" r="380" fill="url(#hE)"/><circle cx="40" cy="10" r="330" fill="url(#hG)"/></g>'
+        f'<circle cx="700" cy="{H}" r="400" fill="url(#hE)"/><circle cx="40" cy="10" r="330" fill="url(#hG)"/></g>'
         f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="18" fill="none" stroke="{GLACIER}" stroke-opacity=".35"/>'
     )
     # brand row
@@ -62,59 +57,20 @@ def hero():
     b.append(f'<rect x="{772 - pw:.0f}" y="31" width="{pw:.0f}" height="28" rx="14" fill="{ICE}" fill-opacity=".06" stroke="{ICE}" stroke-opacity=".2"/>')
     b.append(f'<circle cx="{772 - pw + 16:.0f}" cy="45" r="3.5" fill="{EMBER}" class="pulse"/>')
     b.append(T(772 - pw + 28, 49, pill, "m", 10.5, ICE))
-    # eyebrow + headline
-    b.append(T(28, 128, "DATA ANALYST + PRODUCT BUILDER", "mb", 11, EMBER, ls=3))
-    size = min(66, 400 / max(tw("Tristan", "d", 1), tw("Gautama", "d", 1)))
-    b.append(T(26, 128 + size * 1.0 + 14, "Tristan", "d", round(size, 1), ICE, cls="fadeup", extra='style="animation-delay:.1s"'))
-    b.append(T(26, 128 + size * 2.0 + 18, "Gautama", "d", round(size, 1), "url(#hT)", cls="fadeup", extra='style="animation-delay:.25s"'))
-    sy = 128 + size * 2.0 + 56
-    b.append(T(28, sy, "Data analyst and product builder in Jakarta.", "s", 16.5, ICE))
-    b.append(T(28, sy + 23, "Dashboards, analytics and web apps for real businesses.", "s", 14, GLACIER))
-    # stat cards
-    stats = [(f"{D.TOTAL:,}", "CONTRIBS · 12M"), (f"{D.ACTIVE}", "ACTIVE DAYS"), (f"{D.PUBLIC_REPOS}", "PUBLIC REPOS"), (f"{D.LONGEST}", "DAY STREAK")]
-    cw, gap, y0 = 99, 10, 366
+    # eyebrow + headline + subtitle
+    b.append(T(28, y_eyebrow, "DATA ANALYST + PRODUCT BUILDER", "mb", 11, EMBER, ls=3))
+    b.append(T(26, y_name, "Tristan ", "d", size, ICE, cls="fadeup", extra='style="animation-delay:.1s"'))
+    b.append(T(26 + tw("Tristan ", "d", size), y_name, "Gautama", "d", size, "url(#hT)", cls="fadeup", extra='style="animation-delay:.25s"'))
+    b.append(T(28, y_sub, "Data analyst and product builder in Jakarta.", "s", 16.5, ICE))
+    b.append(T(28, y_sub + 23, "Dashboards, analytics and web apps for real businesses.", "s", 14, GLACIER))
+    # stat cards across the full width
+    gap = 12
+    cw = (744 - 3 * gap) / 4
     for i, (n, lab) in enumerate(stats):
         x = 28 + i * (cw + gap)
         b.append(f'<g class="fadeup" style="animation-delay:{0.35 + i * 0.08:.2f}s">'
-                 f'<rect x="{x}" y="{y0}" width="{cw}" height="56" rx="10" fill="{ICE}" fill-opacity=".055" stroke="{ICE}" stroke-opacity=".14"/>'
-                 f'{T(x + 12, y0 + 27, n, "d", 18, ICE)}{T(x + 12, y0 + 45, lab, "m", 8, GLACIER, ls=1)}</g>')
-
-    # right: floating analytics card (monthly activity, real data)
-    mx = [m[1] for m in D.MONTHS]
-    top = max(mx) or 1
-    cx0, cy0 = 462, 108
-    card = [f'<g class="floaty">',
-            f'<rect x="{cx0}" y="{cy0}" width="310" height="214" rx="16" fill="{NAVY_D}" fill-opacity=".72" stroke="{ICE}" stroke-opacity=".18"/>']
-    for i, col in enumerate((EMBER, GLACIER, ICE)):
-        card.append(f'<circle cx="{cx0 + 20 + i * 14}" cy="{cy0 + 20}" r="3.5" fill="{col}" fill-opacity="{1 if i < 2 else .4}"/>')
-    card.append(T(cx0 + 290, cy0 + 24, "last 12 months", "m", 9.5, GLACIER, "end"))
-    card.append(T(cx0 + 20, cy0 + 68, f"{D.TOTAL:,}", "d", 28, ICE))
-    card.append(T(cx0 + 20, cy0 + 86, "CONTRIBUTIONS", "m", 9, GLACIER, ls=1.5))
-    if D.DELTA is not None:
-        up = D.DELTA >= 0
-        txt = f"{abs(D.DELTA)}% vs prior 90d"
-        bw = tw(txt, "mb", 9) + 30
-        card.append(f'<rect x="{cx0 + 290 - bw:.0f}" y="{cy0 + 50}" width="{bw:.0f}" height="22" rx="11" fill="{EMBER if up else GLACIER}" fill-opacity=".18"/>')
-        tri = f"M{cx0 + 290 - bw + 11:.0f} {cy0 + 64} l4 -7 l4 7z" if up else f"M{cx0 + 290 - bw + 11:.0f} {cy0 + 57} l4 7 l4 -7z"
-        card.append(f'<path d="{tri}" fill="{EMBER if up else GLACIER}"/>')
-        card.append(T(cx0 + 290 - bw + 24, cy0 + 65, txt, "mb", 9, EMBER if up else ICE))
-    n = len(mx)
-    bw_, bg = 15.5, 7.5
-    base = cy0 + 192
-    for i, v in enumerate(mx):
-        h = max(3, 76 * v / top)
-        x = cx0 + 20 + i * (bw_ + bg)
-        peak = v == top
-        card.append(f'<rect x="{x:.1f}" y="{base - h:.1f}" width="{bw_}" height="{h:.1f}" rx="3" fill="{EMBER if peak else GLACIER}" '
-                    f'fill-opacity="{1 if peak else .55}" class="rise" style="animation-delay:{0.4 + i * 0.06:.2f}s"/>')
-    card.append(f'<rect x="{cx0 + 20}" y="{base + 3}" width="270" height="1" fill="{ICE}" fill-opacity=".18"/>')
-    card.append("</g>")
-    b.append("".join(card))
-    chips = [("python", "Python", 612, 86, 0, 5.5), ("nextjs", "Next.js", 462, 338, 1.2, 6.2),
-             ("typescript", "TypeScript", 572, 352, 2.0, 5.0), ("flutter", "Flutter", 694, 334, 0.6, 6.8)]
-    for key, lab, x, y, dl, du in chips:
-        g, w = _chip(x, y, key, lab, dl, du)
-        b.append(g)
+                 f'<rect x="{x:.1f}" y="{y_cards}" width="{cw:.1f}" height="56" rx="10" fill="{ICE}" fill-opacity=".055" stroke="{ICE}" stroke-opacity=".14"/>'
+                 f'{T(x + 14, y_cards + 28, n, "d", 19, ICE)}{T(x + 14, y_cards + 45, lab, "m", 8.5, GLACIER, ls=1)}</g>')
     return svg(W, H, "\n".join(b), "Tristan Gautama: data analyst and product builder in Jakarta, Indonesia", defs=defs)
 
 
@@ -132,22 +88,23 @@ def pill_svg(label, kind):
     tl = tw(label, "mb", 10.5, 1.6)
     w = int(18 + 16 + 9 + tl + 18)
     h = 40
+    pad = 24
     if kind == "globe":
         ic = _globe(18, 12, EMBER)
     elif kind == "diamond":
         ic = _diamond(18, 12, EMBER)
     else:
         ic = icon(kind, 18, 12, 16)
-    body = (f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="20" fill="{NAVY}" stroke="{GLACIER}" stroke-opacity=".5"/>'
-            f"{ic}{T(18 + 16 + 9, 25, label, 'mb', 10.5, ICE, ls=1.6)}")
-    return svg(w, h, body, label), w
+    body = (f'<g transform="translate(0 {pad})"><rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="20" fill="{NAVY}" stroke="{GLACIER}" stroke-opacity=".5"/>'
+            f"{ic}{T(18 + 16 + 9, 25, label, 'mb', 10.5, ICE, ls=1.6)}</g>")
+    return svg(w, h + pad + 2, body, label), w
 
 
 # ------------------------------------------------------------------ now bar
 def nowbar():
     H = 56
-    txt = "Data analyst intern at Kawan Lama Group · business development at Sensify"
+    txt = "Data Analyst Intern @ Kawan Lama Group & Business Development @ Sensify"
     body = (f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="16" fill="{NAVY}" stroke="{GLACIER}" stroke-opacity=".4"/>'
             f'<rect x="12" y="12" width="56" height="32" rx="16" fill="{EMBER}"/>{T(40, 32, "NOW", "mb", 10.5, NAVY, "middle", ls=2)}'
             f'<circle cx="88" cy="28" r="4" fill="{EMBER}" class="pulse"/>{T(104, 33, txt, "s", 14, ICE)}')
-    return svg(W, H, body, "Now: data analyst intern at Kawan Lama Group and business development at Sensify")
+    return svg(W, H, body, "Now: Data Analyst Intern at Kawan Lama Group and Business Development at Sensify")

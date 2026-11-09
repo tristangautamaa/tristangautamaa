@@ -19,7 +19,7 @@ def whoami():
     y += 26 * 3 + 6
     b.append(f'<rect x="{L}" y="{y}" width="{R - L}" height="1" class="slm"/>')
     y += 32
-    rows = [("FOCUS", "data analysis · web and full-stack development · AI-integrated products"),
+    rows = [("FOCUS", "Data Analysis, Machine Learning, Web and AI Integration"),
             ("BASE", "Jakarta, Indonesia")]
     for i, (k, v) in enumerate(rows):
         yy = y + i * 28
@@ -68,7 +68,7 @@ def stack():
 
 # ------------------------------------------------------------------ projects
 PROJECTS = [
-    ("SEAPORT — VENDOR EKSPEDISI KLG", "INTERNAL",
+    ("SEAPORT - VENDOR EKSPEDISI KLG", "INTERNAL",
      "Internal freight-tariff portal: imports vendor RFQ spreadsheets, matches them to master data, keeps monthly rates with full revision history and compares vendors lane by lane.",
      "NEXT.JS · REACT · TAILWIND · RADIX UI · SHEETJS"),
     ("NAWARX", "INTERNAL",
@@ -110,8 +110,8 @@ def projects():
 
 # ------------------------------------------------------------------ experience
 EXPERIENCE = [
-    ("FEB 2026 — FEB 2027", "Data Analyst Intern", "Kawan Lama Group", "Operations officer Feb–Apr 2026, data analyst from May 2026."),
-    ("MAY 2026 — NOW", "Business Development Representative", "Sensify", "Part-time. AI-powered storefronts for growing brands."),
+    ("FEB 2026 - NOW", "Data Analyst Intern", "Kawan Lama Group", ""),
+    ("MAY 2026 - NOW", "Business Development Representative", "Sensify", "Part-time. AI-powered storefronts for growing brands."),
     ("EDUCATION", "Student", "Multimedia Nusantara University", "Jakarta, Indonesia."),
 ]
 
@@ -123,7 +123,7 @@ def experience():
     for i, (per, role, org, sub) in enumerate(EXPERIENCE):
         b.append(T(L, y + 14, per, "mb", 10, "mu", ls=1.5))
         b.append(T(L + 200, y + 15, role, "sb", 16, "fg"))
-        b.append(T(L + 200, y + 37, f"{org} — {sub}", "s", 13.5, "mu"))
+        b.append(T(L + 200, y + 37, f"{org} · {sub}" if sub else org, "s", 13.5, "mu"))
         y += 66
         if i < len(EXPERIENCE) - 1:
             b.append(f'<rect x="{L}" y="{y - 14}" width="{R - L}" height="1" class="slm"/>')
