@@ -1,37 +1,63 @@
 <div align="center">
 
-<img src="assets/header.svg" alt="Tristan Gautama — Software, Data and Geospatial ML. Jakarta, Indonesia." width="100%" />
+<img src="assets/hero.svg" alt="Tristan Gautama, data analyst and product builder in Jakarta, Indonesia." width="100%" />
 
-<a href="https://tristangautama.xyz">PORTFOLIO</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/tristangautama">LINKEDIN</a> &nbsp;·&nbsp; <a href="https://github.com/tristangautamaa?tab=repositories">REPOSITORIES</a>
+<br/>
+
+<a href="https://tristangautama.xyz"><img src="assets/pill-portfolio.svg" alt="Portfolio" height="36" /></a>
+<a href="https://www.linkedin.com/in/tristangautama"><img src="assets/pill-linkedin.svg" alt="LinkedIn" height="36" /></a>
+<a href="https://github.com/tristangautamaa?tab=repositories"><img src="assets/pill-github.svg" alt="GitHub repositories" height="36" /></a>
+<a href="https://migravia.id"><img src="assets/pill-migravia.svg" alt="Migravia" height="36" /></a>
+<a href="https://sensify.id"><img src="assets/pill-sensify.svg" alt="Sensify" height="36" /></a>
+<a href="https://griyaplast.shop"><img src="assets/pill-griyaplast.svg" alt="Griyaplast" height="36" /></a>
+
+<br/><br/>
+
+<img src="assets/now.svg" alt="Now: data analyst intern at Kawan Lama Group and business development at Sensify." width="100%" />
 
 </div>
 
 <br/>
 
-<img src="assets/whoami.svg" alt="01 whoami: student at Multimedia Nusantara University, co-founder of Architech Technology Solutions, researching geospatial ML for renewable-energy access in Indonesia." width="100%" />
+<img src="assets/about.svg" alt="01 about: student at Multimedia Nusantara University in Jakarta, data analyst intern, builder of websites, apps and internal tools." width="100%" />
 
-<img src="assets/ecosystem.svg" alt="02 system map: projects grouped into research and geospatial, company, AI and data, internal tools, mobile and early work, and client platforms." width="100%" />
+<br/>
 
-<img src="assets/projects.svg" alt="03 projects: Energy Access Planner, Migravia, Sensify, Seaport, NawarX, Griyaplast, Poncol Padel House, GISEU, SPEAK, Stock AI WhatsApp Alert, ZEAT App, Diabetes Prediction, Zero-EAT." width="100%" />
+<img src="assets/products-head.svg" alt="02 products I've built" width="100%" />
 
 <div align="center">
 
-**LIVE ▸** [energy-dss](https://tristangautamaa.github.io/energy-dss/) · [migravia.id](https://migravia.id) · [sensify.id](https://sensify.id) · [griyaplast.shop](https://griyaplast.shop) · [pph-project](https://pph-project.vercel.app)
-
-**SOURCE ▸** [energy-dss](https://github.com/tristangautamaa/energy-dss) · [Speak-AI](https://github.com/tristangautamaa/Speak-AI) · [stock-ai-whatsapp-alert](https://github.com/tristangautamaa/stock-ai-whatsapp-alert) · [sensify-website](https://github.com/tristangautamaa/sensify-website) · [pph-website](https://github.com/tristangautamaa/pph-website) · [zeat-app](https://github.com/tristangautamaa/zeat-app) · [diabetes-prediction](https://github.com/tristangautamaa/Machine-Learning-Algorithms-for-Diabetes-Prediction) · [Zero-EAT](https://github.com/tristangautamaa/Zero-EAT)
+<a href="https://migravia.id"><img src="assets/product-migravia.svg" alt="Migravia: immigration-services platform for visa, KITAS and KITAP cases in Indonesia. migravia.id" width="32%" /></a>
+<a href="https://sensify.id"><img src="assets/product-sensify.svg" alt="Sensify: AI-powered storefront for Indonesian brands. sensify.id" width="32%" /></a>
+<a href="https://griyaplast.shop"><img src="assets/product-griyaplast.svg" alt="Griyaplast: website for a plastic household-goods manufacturer in Surabaya. griyaplast.shop" width="32%" /></a>
 
 </div>
 
 <br/>
 
-<img src="assets/telemetry.svg" alt="04 telemetry: 2,323 contributions in 2026 across 114 active days, yearly growth from 2 in 2023 to 2,323, language mix of public repositories, and a daily activity heatmap." width="100%" />
+<img src="assets/dashboard.svg" alt="03 dashboard: GitHub contributions over the last 12 months with monthly trend, language mix, daily heatmap, weekday pattern and a work timeline." width="100%" />
 
-<img src="assets/route.svg" alt="05 the route: timeline from 2021 to now, and experience at Kawan Lama Group, Sensify and Architech Technology Solutions." width="100%" />
+<br/>
 
-<img src="assets/stack.svg" alt="06 stack: JavaScript, TypeScript, Python, Java, PHP, Dart, React, Next.js, Flutter, FastAPI, pandas, scikit-learn, MapLibre GL." width="100%" />
+<img src="assets/stack.svg" alt="04 tech stack: Java, Python, TypeScript, JavaScript, PHP, C++, Dart, HTML, CSS, React, Next.js, Flutter, FastAPI, Laravel, Node.js, Tailwind, Vite, Three.js, pandas, NumPy, scikit-learn, Jupyter, Streamlit, Git, GitHub, Docker, Vercel, Firebase, Supabase." width="100%" />
 
-<img src="assets/footer.svg" alt="Status: building. Forever learning. tristangautama.xyz, Jakarta, Indonesia." width="100%" />
+<br/>
 
-<!-- one responsive SVG per section; colors follow the viewer's light/dark preference.
-     SVGs are generated by scripts/gen.py from assets/data.json, which a weekly GitHub Action
-     (.github/workflows/telemetry.yml) refreshes via scripts/fetch_data.py -->
+<img src="assets/projects.svg" alt="05 more projects: Seaport, NawarX, GISEU, ZEAT app and Zero-EAT." width="100%" />
+
+<div align="center">
+
+**LIVE ▸** [migravia.id](https://migravia.id) · [sensify.id](https://sensify.id) · [griyaplast.shop](https://griyaplast.shop)
+
+**SOURCE ▸** [sensify-website](https://github.com/tristangautamaa/sensify-website) · [zeat-app](https://github.com/tristangautamaa/zeat-app) · [Zero-EAT](https://github.com/tristangautamaa/Zero-EAT)
+
+</div>
+
+<br/>
+
+<img src="assets/experience.svg" alt="06 experience: data analyst intern at Kawan Lama Group, business development representative at Sensify, student at Multimedia Nusantara University." width="100%" />
+
+<img src="assets/footer.svg" alt="tristangautama.xyz, Jakarta, Indonesia." width="100%" />
+
+<!-- SVGs are generated by scripts/gen.py from assets/data.json, which a weekly GitHub Action
+     (.github/workflows/telemetry.yml) refreshes via scripts/fetch_data.py. Fonts are embedded per SVG. -->

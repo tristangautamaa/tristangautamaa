@@ -1,108 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1505" width="800" height="1505" role="img" aria-label="Selected projects: Energy Access Planner, Migravia, Sensify, Seaport, NawarX, Griyaplast, Poncol Padel House, GISEU, SPEAK, Stock AI WhatsApp Alert, ZEAT app, diabetes prediction, Zero-EAT">
-<title>Selected projects: Energy Access Planner, Migravia, Sensify, Seaport, NawarX, Griyaplast, Poncol Padel House, GISEU, SPEAK, Stock AI WhatsApp Alert, ZEAT app, diabetes prediction, Zero-EAT</title>
-<style>
-text{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono","DejaVu Sans Mono",monospace}
-.fg{fill:#0d1117}.mu{fill:#57606a}.ac{fill:#0f766e}
-.ln{stroke:#0d1117}.lm{stroke:#8c959f}.la{stroke:#0f766e}
-.nf{fill:none}
-.h0{fill:#0d1117;fill-opacity:.07}.h1{fill:#0d1117;fill-opacity:.28}.h2{fill:#0d1117;fill-opacity:.5}.h3{fill:#0d1117;fill-opacity:.75}.h4{fill:#0d1117;fill-opacity:1}
-.tk{fill:#0d1117;fill-opacity:.08;stroke:#0d1117;stroke-width:1}
-.bar{fill:#0d1117}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 686" width="800" height="686" role="img" aria-label="More projects: Seaport, NawarX, GISEU, ZEAT app and Zero-EAT">
+<title>More projects: Seaport, NawarX, GISEU, ZEAT app and Zero-EAT</title>
+<style>@font-face{font-family:"Unbounded";font-weight:700;src:url(data:font/woff2;base64,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) format("woff2")}.fd{font-family:"Unbounded","Arial Black",Impact,sans-serif;font-weight:700}@font-face{font-family:"Instrument Sans";font-weight:400;src:url(data:font/woff2;base64,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) format("woff2")}.fs{font-family:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-weight:400}@font-face{font-family:"JetBrains Mono";font-weight:500;src:url(data:font/woff2;base64,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) format("woff2")}.fm{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-weight:500}@font-face{font-family:"JetBrains Mono";font-weight:700;src:url(data:font/woff2;base64,d09GMgABAAAAAAXUABAAAAAAC0QAAAV6AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbIBwqBmA/U1RBVEwAfBEICosAiDcBNgIkAywLLAAEIAWEJgcgDAcbuQijonYwTkUAf3VgG6L2Qb0IM00MFt9l2jBoLRcv93wDjj4iC5RCkd+6M3tmaTE0wAQjUzw8vw76c9/MglCzG1TFUNhV1Xa/4v6d/6vLfiQ2qmp6wJ6JzVOy8Fk87dsjrHP8vrmcWTDzs7UAIHtCljBQxufLG5sIU2BlUMij/C8sm7wmNqIpRZ0PbDaS/GqtogcdHA815LoHKUe+qzW1vwFSiXAMRkXK/wteiC+OxxMVwXeqKnSn4xEl4Pi4VrgIW/IVpkLI1twYwUqhis/N7byZPA1LoDwgCaG8ECirPndaw0eOn85QDgUARtFSIO3Nma9fsn0jRyTYLk+z02slSMd7JWBcPTwWYmMwSJTROIZjxw4FrmssPfv9p8SdjlDcL5taps9oTE8IpSVUp43mtHetWr09sGb7kvVRScjVpg1RMr0mzQbpJzIhReX8kAIZH4ojW6Jr9X1rsqSjpMYohIpahFjxkqUXiHFpiBEnSn0viv+88+t1RVtURVkURS40diEKKhHV8N1tgfogbpFaApCDTBKFnSAWZ3IteZaVLtO4fPmqJatWralQplKZdqXtLGqARvdb6DSwzuw6u38WYAsbEku4hvjrbXgoNe1kb4V1+lWRP2WS9JRsJ+UP5BfD3yVYRwHpHcHQwo5EgcYmGVDkjxn/5GEcWfGNJ1oZjGw+LqGyYHX544ETsgVskNkLIkqTMk9EIhvHV2R1Q4zFDvjHlx0LcQ0yfSCaf81MfhiJBjOnc8KrMpPYNcnaSLtyecPXr7l/yAkMCJz8VxmZkioDvefC0C2AtyBUu3ASsKOQC9CuJccBH2GfwFiCSozXBS7N8tqy1hOE6EurqI65UXQNc3SvPrn9pIAJlSgO2olDwecf75//NBxgb6pXJQfrIdOeRWK7l/nsN4rRYyws5uVqYVE1joyqxKIi9SCuQKgDKVAnQpVoUCUqqcSQ7dOGflcdieMDyQaYm7U/a423j5dUQZr83tUD3HPS4xl35tT2VjonfrdVHqgUtMNor91OoPRjnduR29q/1q0EV70FndFVAe0YPcSCYl7On/SPREZVOIQqBVXxVzUgAZJjghDBchQJE/w3pp6TlGvU0oo6LqbTcaaz+zfU/SveCeP9EVNLJMV8dHTDg7NIDzbJ8V6u7XEBwYsEQQemLhhxvvnAsJIVCm6EtjjWM80+wy6/JUXO5VUykbV99TDvQpoRUxDsP1470yHTLq85TS4prEPwvfLa9t/t11Zqx9gREZbwYl5oWRMVXSn9kXX4KduXfYrvWvTGbYS7O1L/H4H0XP3/6sLBe7svrr+20aR9+/VXWGIw6qbJZYGCEVVex0VHVCCuQKXWDMZFb13sKqE5Y8dIVKAcZCYx7KJFTCdObdm7WAdvb/nwOpAMtJSIlKKCGgSTKyOe1Dbz7aP/cnTgtmAOLsv1Mm9JNIUzmSg2HXs+PtubrzxvaaFVbPAxfDSWZ8PSLokq622BfmP39sxo8X4+hyQVdI1TuV2RhfR/aa3zCb7cObbbFH7UzrTjXqwmkg2kpaQEgg9sNM1GCPisQ0uDI0rl5kSzfxx3VaJFSxBPJJxGGgkJlUhSIFBDKB0Q5KJyjstEXgav6atCfZdVSWkfVZmeXqlyLaOmqoS60V9ZUvOYaRKUj70LSnLFolKMe/h+lRnHecM0adajVY0q1dp5YtGaeEr3QgWOtUg7HqlbokajNpKgqQdNJFlrxbW4QBkHUekQXO0PtKIDgdykXbOnV4xCqVKDGk2HUuHKNGlAZZrW78298qCZYV7r1ivHCsdM3VqJWDwJazhs5Cze2YuETBoFbSi6wDPf7PNQWd51xzGalKjfbMukatKgZJQ6QBH2n1T9PA6+ny8AAA==) format("woff2")}.fmb{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-weight:700}
+.fg{fill:#233D4D}.mu{fill:#4F7690}.ac{fill:#C2570A}.acf{fill:#FE7F2D}
+.sfg{stroke:#233D4D}.slm{stroke:#233D4D;stroke-opacity:.2}.ffg{fill:#233D4D}.flm{fill:#233D4D;fill-opacity:.08}
 @media (prefers-color-scheme:dark){
-.fg{fill:#f0f6fc}.mu{fill:#8b949e}.ac{fill:#2dd4bf}
-.ln{stroke:#f0f6fc}.lm{stroke:#6e7681}.la{stroke:#2dd4bf}
-.h0{fill:#f0f6fc;fill-opacity:.08}.h1{fill:#f0f6fc;fill-opacity:.3}.h2{fill:#f0f6fc;fill-opacity:.52}.h3{fill:#f0f6fc;fill-opacity:.76}.h4{fill:#f0f6fc;fill-opacity:1}
-.tk{fill:#f0f6fc;fill-opacity:.1;stroke:#f0f6fc}
-.bar{fill:#f0f6fc}
+.fg{fill:#EAF1F6}.mu{fill:#6594B1}.ac{fill:#FE7F2D}
+.sfg{stroke:#EAF1F6}.slm{stroke:#EAF1F6;stroke-opacity:.2}.ffg{fill:#EAF1F6}.flm{fill:#EAF1F6;fill-opacity:.08}
 }
-@keyframes flow{to{stroke-dashoffset:-16}}
+
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes fadeup{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
-@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
 @keyframes rise{from{transform:scaleY(0)}to{transform:scaleY(1)}}
-.flow{stroke-dasharray:3 5;animation:flow 1.4s linear infinite}
-.cur{animation:blink 1.1s steps(1) infinite}
-.dot{animation:pulse 2s ease-in-out infinite}
-.gx{transform-box:fill-box;transform-origin:left center;animation:grow .9s ease-out both}
-.gy{transform-box:fill-box;transform-origin:center bottom;animation:rise .9s ease-out both}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes sweep{0%{transform:scaleX(.08)}70%,100%{transform:scaleX(1)}}
+@keyframes shimmer{from{transform:translateX(-120%)}to{transform:translateX(220%)}}
+@keyframes ring{from{stroke-dashoffset:var(--len)}to{stroke-dashoffset:0}}
+@keyframes dots{0%,80%,100%{opacity:.25}40%{opacity:1}}
+.floaty{animation:floaty 5s ease-in-out infinite}
+.fadeup{animation:fadeup .7s ease-out both}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.2,.9,.3,1.4) both}
+.pulse{animation:pulse 2s ease-in-out infinite}
+.blink{animation:blink 1.1s steps(1) infinite}
+.draw{stroke-dasharray:1;animation:draw 1.6s ease-out both}
+.rise{transform-box:fill-box;transform-origin:center bottom;animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.grow{transform-box:fill-box;transform-origin:left center;animation:grow 1s ease-out both}
+.sweep{transform-box:fill-box;transform-origin:left center;animation:sweep 3.2s ease-in-out infinite alternate}
+.shim{animation:shimmer 3.6s ease-in-out infinite}
+.ring{animation:ring 1.4s ease-out both}
+.dt{animation:dots 1.2s infinite}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
-<text x="8" y="34" class="fg" font-size="40" font-weight="300" textLength="48.0" lengthAdjust="spacing">03</text>
-<text x="72" y="27" class="fg" font-size="11.5" font-weight="700" letter-spacing="4" textLength="83.2" lengthAdjust="spacing">PROJECTS</text>
-<line x1="171.2" y1="23" x2="694.1" y2="23" class="ln" stroke-width="1" />
-<text x="792" y="27" class="mu" font-size="10.5" font-weight="400" text-anchor="end" textLength="81.9" lengthAdjust="spacing">~/03-projects</text>
-<text x="10" y="98" class="fg" font-size="13" font-weight="700" textLength="202.8" lengthAdjust="spacing">01 / ENERGY ACCESS PLANNER</text>
-<circle cx="750" cy="94.5" r="3" class="ac dot"/>
-<text x="792" y="98" class="ac" font-size="9.5" font-weight="700" text-anchor="end" letter-spacing="2" textLength="28.8" lengthAdjust="spacing">LIVE</text>
-<text x="10" y="120" class="fg" font-size="11.2" font-weight="400" textLength="658.6" lengthAdjust="spacing">Decision-support dashboard ranking Indonesia's 514 districts for renewable-energy access programs.</text>
-<text x="10" y="137" class="fg" font-size="11.2" font-weight="400" textLength="651.8" lengthAdjust="spacing">Blends night-time light, poverty, road access and terrain into a 0–100 access disadvantage index.</text>
-<text x="10" y="160" class="mu" font-size="9.5" font-weight="400" letter-spacing="1" textLength="354.1" lengthAdjust="spacing">JAVASCRIPT · MAPLIBRE GL · GEOJSON · DECISION SUPPORT</text>
-<line x1="8" y1="176" x2="792" y2="176" class="lm" stroke-width="1" />
-<text x="10" y="212" class="fg" font-size="13" font-weight="700" textLength="101.4" lengthAdjust="spacing">02 / MIGRAVIA</text>
-<circle cx="750" cy="208.5" r="3" class="ac dot"/>
-<text x="792" y="212" class="ac" font-size="9.5" font-weight="700" text-anchor="end" letter-spacing="2" textLength="28.8" lengthAdjust="spacing">LIVE</text>
-<text x="10" y="234" class="fg" font-size="11.2" font-weight="400" textLength="504.0" lengthAdjust="spacing">Immigration-services platform for visa, KITAS and KITAP cases in Indonesia.</text>
-<text x="10" y="251" class="fg" font-size="11.2" font-weight="400" textLength="651.8" lengthAdjust="spacing">Company website, WhatsApp-first intake and a client portal with case tracking and renewal alerts.</text>
-<text x="10" y="274" class="mu" font-size="9.5" font-weight="400" letter-spacing="1" textLength="313.9" lengthAdjust="spacing">REACT · VITE · TYPESCRIPT · TAILWIND · WHATSAPP</text>
-<line x1="8" y1="290" x2="792" y2="290" class="lm" stroke-width="1" />
-<text x="10" y="326" class="fg" font-size="13" font-weight="700" textLength="93.6" lengthAdjust="spacing">03 / SENSIFY</text>
-<circle cx="750" cy="322.5" r="3" class="ac dot"/>
-<text x="792" y="326" class="ac" font-size="9.5" font-weight="700" text-anchor="end" letter-spacing="2" textLength="28.8" lengthAdjust="spacing">LIVE</text>
-<text x="10" y="348" class="fg" font-size="11.2" font-weight="400" textLength="631.7" lengthAdjust="spacing">AI-powered storefront for Indonesian brands: an owned official website beside the marketplace.</text>
-<text x="10" y="365" class="fg" font-size="11.2" font-weight="400" textLength="396.5" lengthAdjust="spacing">Cinematic interactive homepage with a shader-gradient hero.</text>
-<text x="10" y="388" class="mu" font-size="9.5" font-weight="400" letter-spacing="1" textLength="226.8" lengthAdjust="spacing">REACT · VITE · THREE.JS · TAILWIND</text>
-<line x1="8" y1="404" x2="792" y2="404" class="lm" stroke-width="1" />
-<text x="10" y="440" class="fg" font-size="13" font-weight="700" textLength="273.0" lengthAdjust="spacing">04 / SEAPORT — VENDOR EKSPEDISI KLG</text>
-<text x="792" y="440" class="mu" font-size="9.5" font-weight="700" text-anchor="end" letter-spacing="2" textLength="59.6" lengthAdjust="spacing">INTERNAL</text>
-<text x="10" y="462" class="fg" font-size="11.2" font-weight="400" textLength="645.1" lengthAdjust="spacing">Internal freight-tariff portal: imports vendor RFQ spreadsheets and matches them to master data.</text>
-<text x="10" y="479" class="fg" font-size="11.2" font-weight="400" textLength="544.3" lengthAdjust="spacing">Keeps monthly rates with full revision history and compares vendors lane by lane.</text>
-<text x="10" y="502" class="mu" font-size="9.5" font-weight="400" letter-spacing="1" textLength="313.9" lengthAdjust="spacing">NEXT.JS · REACT · TAILWIND · RADIX UI · SHEETJS</text>
-<line x1="8" y1="518" x2="792" y2="518" class="lm" stroke-width="1" />
-<text x="10" y="554" class="fg" font-size="13" font-weight="700" textLength="85.8" lengthAdjust="spacing">05 / NAWARX</text>
-<text x="792" y="554" class="mu" font-size="9.5" font-weight="700" text-anchor="end" letter-spacing="2" textLength="59.6" lengthAdjust="spacing">INTERNAL</text>
-<text x="10" y="576" class="fg" font-size="11.2" font-weight="400" textLength="618.2" lengthAdjust="spacing">Billboard (OOH) intelligence tool: price database, price calculator and negotiation advisor.</text>
-<text x="10" y="593" class="fg" font-size="11.2" font-weight="400" textLength="490.6" lengthAdjust="spacing">Benchmarks quotes against deal history and maps nearby sites and vendors.</text>
-<text x="10" y="616" class="mu" font-size="9.5" font-weight="400" letter-spacing="1" textLength="313.9" lengthAdjust="spacing">VITE · TYPESCRIPT · LEAFLET · SUPABASE · PYTHON</text>
-<line x1="8" y1="632" x2="792" y2="632" class="lm" stroke-width="1" />
-<text x="10" y="668" class="fg" font-size="13" font-weight="700" textLength="117.0" lengthAdjust="spacing">06 / GRIYAPLAST</text>
-<circle cx="750" cy="664.5" r="3" class="ac dot"/>
-<text x="792" y="668" class="ac" font-size="9.5" font-weight="700" text-anchor="end" letter-spacing="2" textLength="28.8" lengthAdjust="spacing">LIVE</text>
-<text x="10" y="690" class="fg" font-size="11.2" font-weight="400" textLength="651.8" lengthAdjust="spacing">Website for a plastic household-goods manufacturer with a product catalog and wholesale ordering.</text>
-<text x="10" y="707" class="fg" font-size="11.2" font-weight="400" textLength="383.0" lengthAdjust="spacing">WhatsApp ordering and a shipping-cost estimator built in.</text>
-<text x="10" y="730" class="mu" font-size="9.5" font-weight="400" letter-spacing="1" textLength="206.7" lengthAdjust="spacing">NEXT.JS · TYPESCRIPT · WHATSAPP</text>
-<line x1="8" y1="746" x2="792" y2="746" class="lm" stroke-width="1" />
-<text x="10" y="782" class="fg" font-size="13" font-weight="700" textLength="179.4" lengthAdjust="spacing">07 / PONCOL PADEL HOUSE</text>
-<circle cx="750" cy="778.5" r="3" class="ac dot"/>
-<text x="792" y="782" class="ac" font-size="9.5" font-weight="700" text-anchor="end" letter-spacing="2" textLength="28.8" lengthAdjust="spacing">LIVE</text>
-<text x="10" y="804" class="fg" font-size="11.2" font-weight="400" textLength="604.8" lengthAdjust="spacing">Website for a padel venue with scroll-driven animation and a responsive Next.js front end.</text>
-<text x="10" y="827" class="mu" font-size="9.5" font-weight="400" letter-spacing="1" textLength="287.1" lengthAdjust="spacing">NEXT.JS · TYPESCRIPT · FRAMER MOTION · GSAP</text>
-<line x1="8" y1="843" x2="792" y2="843" class="lm" stroke-width="1" />
-<text x="10" y="879" class="fg" font-size="13" font-weight="700" textLength="78.0" lengthAdjust="spacing">08 / GISEU</text>
-<text x="10" y="901" class="fg" font-size="11.2" font-weight="400" textLength="483.8" lengthAdjust="spacing">Editorial fashion site in a quiet-luxury, modern-Japanese-minimal style.</text>
-<text x="10" y="918" class="fg" font-size="11.2" font-weight="400" textLength="530.9" lengthAdjust="spacing">One continuous smooth-scrolling page with a fullscreen rolling-text navigation.</text>
-<text x="10" y="941" class="mu" font-size="9.5" font-weight="400" letter-spacing="1" textLength="374.2" lengthAdjust="spacing">VITE · REACT · TYPESCRIPT · FRAMER MOTION · GSAP · LENIS</text>
-<line x1="8" y1="957" x2="792" y2="957" class="lm" stroke-width="1" />
-<text x="10" y="993" class="fg" font-size="13" font-weight="700" textLength="78.0" lengthAdjust="spacing">09 / SPEAK</text>
-<text x="10" y="1015" class="fg" font-size="11.2" font-weight="400" textLength="383.0" lengthAdjust="spacing">AI communication coach for speaking with calm confidence.</text>
-<text x="10" y="1032" class="fg" font-size="11.2" font-weight="400" textLength="571.2" lengthAdjust="spacing">Live transcription, AI coaching feedback and communication metrics tracked over time.</text>
-<text x="10" y="1055" class="mu" font-size="9.5" font-weight="400" letter-spacing="1" textLength="226.8" lengthAdjust="spacing">NEXT.JS · TYPESCRIPT · PYTHON · AI</text>
-<line x1="8" y1="1071" x2="792" y2="1071" class="lm" stroke-width="1" />
-<text x="10" y="1107" class="fg" font-size="13" font-weight="700" textLength="218.4" lengthAdjust="spacing">10 / STOCK AI WHATSAPP ALERT</text>
-<text x="10" y="1129" class="fg" font-size="11.2" font-weight="400" textLength="463.7" lengthAdjust="spacing">Private AI-assisted stock research system that analyzes stocks daily.</text>
-<text x="10" y="1146" class="fg" font-size="11.2" font-weight="400" textLength="678.7" lengthAdjust="spacing">Rule-based signal scoring with optional AI enrichment, delivered as WhatsApp alerts. It never trades.</text>
-<text x="10" y="1169" class="mu" font-size="9.5" font-weight="400" letter-spacing="1" textLength="240.2" lengthAdjust="spacing">PYTHON · FASTAPI · DOCKER · WHATSAPP</text>
-<line x1="8" y1="1185" x2="792" y2="1185" class="lm" stroke-width="1" />
-<text x="10" y="1221" class="fg" font-size="13" font-weight="700" textLength="101.4" lengthAdjust="spacing">11 / ZEAT APP</text>
-<text x="10" y="1243" class="fg" font-size="11.2" font-weight="400" textLength="611.5" lengthAdjust="spacing">Food-ordering app: menu, cart, pickup and delivery tracking, admin dashboard and a chatbot.</text>
-<text x="10" y="1266" class="mu" font-size="9.5" font-weight="400" letter-spacing="1" textLength="166.5" lengthAdjust="spacing">FLUTTER · DART · FIREBASE</text>
-<line x1="8" y1="1282" x2="792" y2="1282" class="lm" stroke-width="1" />
-<text x="10" y="1318" class="fg" font-size="13" font-weight="700" textLength="187.2" lengthAdjust="spacing">12 / DIABETES PREDICTION</text>
-<text x="10" y="1340" class="fg" font-size="11.2" font-weight="400" textLength="645.1" lengthAdjust="spacing">Comparison of machine-learning algorithms for diabetes prediction with class-imbalance handling.</text>
-<text x="10" y="1357" class="fg" font-size="11.2" font-weight="400" textLength="309.1" lengthAdjust="spacing">Streamlit front end for exploring the results.</text>
-<text x="10" y="1380" class="mu" font-size="9.5" font-weight="400" letter-spacing="1" textLength="280.4" lengthAdjust="spacing">PYTHON · PANDAS · SCIKIT-LEARN · STREAMLIT</text>
-<line x1="8" y1="1396" x2="792" y2="1396" class="lm" stroke-width="1" />
-<text x="10" y="1432" class="fg" font-size="13" font-weight="700" textLength="101.4" lengthAdjust="spacing">13 / ZERO-EAT</text>
-<text x="10" y="1454" class="fg" font-size="11.2" font-weight="400" textLength="524.2" lengthAdjust="spacing">Laravel web app with user registration, login, profiles and a product catalog.</text>
-<text x="10" y="1477" class="mu" font-size="9.5" font-weight="400" letter-spacing="1" textLength="213.4" lengthAdjust="spacing">LARAVEL · PHP · BLADE · TAILWIND</text>
-<line x1="8" y1="1493" x2="792" y2="1493" class="ln" stroke-width="1" />
+<defs></defs>
+<text x="12.0" y="14.0" font-size="11" class="fmb ac" letter-spacing="3">05 / PROJECTS</text>
+<text x="12.0" y="50.0" font-size="26" class="fd fg">More projects</text>
+<text x="788.0" y="48.0" font-size="13" class="fs mu" text-anchor="end">Internal tools and earlier builds</text>
+<rect x="12" y="62" width="776" height="1.5" class="slm" fill="none"/>
+<rect x="12" y="61.5" width="231" height="2.5" rx="1" class="acf"/>
+<text x="12.0" y="114.0" font-size="11" class="fmb ac" letter-spacing="1">01</text>
+<text x="46.0" y="115.0" font-size="13" class="fd fg">SEAPORT — VENDOR EKSPEDISI KLG</text>
+<rect x="711" y="102" width="77" height="20" rx="10" class="slm" fill="none"/>
+<text x="749.4" y="116.0" font-size="9" class="fmb mu" text-anchor="middle" letter-spacing="2">INTERNAL</text>
+<text x="46.0" y="140.0" font-size="13.5" class="fs fg">Internal freight-tariff portal: imports vendor RFQ spreadsheets, matches them to master data, keeps monthly rates with</text>
+<text x="46.0" y="160.0" font-size="13.5" class="fs fg">full revision history and compares vendors lane by lane.</text>
+<text x="46.0" y="186.0" font-size="9.5" class="fm mu" letter-spacing="0.8">NEXT.JS · REACT · TAILWIND · RADIX UI · SHEETJS</text>
+<rect x="12" y="204" width="776" height="1" class="slm"/>
+<text x="12.0" y="242.0" font-size="11" class="fmb ac" letter-spacing="1">02</text>
+<text x="46.0" y="243.0" font-size="13" class="fd fg">NAWARX</text>
+<rect x="711" y="230" width="77" height="20" rx="10" class="slm" fill="none"/>
+<text x="749.4" y="244.0" font-size="9" class="fmb mu" text-anchor="middle" letter-spacing="2">INTERNAL</text>
+<text x="46.0" y="268.0" font-size="13.5" class="fs fg">Billboard (OOH) intelligence tool: a price database, a price calculator and a negotiation advisor that benchmarks quotes</text>
+<text x="46.0" y="288.0" font-size="13.5" class="fs fg">against deal history and maps nearby sites and vendors.</text>
+<text x="46.0" y="314.0" font-size="9.5" class="fm mu" letter-spacing="0.8">VITE · TYPESCRIPT · LEAFLET · SUPABASE · PYTHON</text>
+<rect x="12" y="332" width="776" height="1" class="slm"/>
+<text x="12.0" y="370.0" font-size="11" class="fmb ac" letter-spacing="1">03</text>
+<text x="46.0" y="371.0" font-size="13" class="fd fg">GISEU</text>
+<text x="46.0" y="396.0" font-size="13.5" class="fs fg">Editorial fashion site in a quiet-luxury, modern-Japanese-minimal style: one continuous smooth-scrolling page with a</text>
+<text x="46.0" y="416.0" font-size="13.5" class="fs fg">fullscreen rolling-text navigation.</text>
+<text x="46.0" y="442.0" font-size="9.5" class="fm mu" letter-spacing="0.8">VITE · REACT · TYPESCRIPT · FRAMER MOTION · GSAP · LENIS</text>
+<rect x="12" y="460" width="776" height="1" class="slm"/>
+<text x="12.0" y="498.0" font-size="11" class="fmb ac" letter-spacing="1">04</text>
+<text x="46.0" y="499.0" font-size="13" class="fd fg">ZEAT APP</text>
+<text x="46.0" y="524.0" font-size="13.5" class="fs fg">Food-ordering app with menu, cart, pickup and delivery tracking, an admin dashboard and a chatbot.</text>
+<text x="46.0" y="550.0" font-size="9.5" class="fm mu" letter-spacing="0.8">FLUTTER · DART · FIREBASE</text>
+<rect x="12" y="568" width="776" height="1" class="slm"/>
+<text x="12.0" y="606.0" font-size="11" class="fmb ac" letter-spacing="1">05</text>
+<text x="46.0" y="607.0" font-size="13" class="fd fg">ZERO-EAT</text>
+<text x="46.0" y="632.0" font-size="13.5" class="fs fg">Laravel web app with user registration, login, profiles and a product catalog.</text>
+<text x="46.0" y="658.0" font-size="9.5" class="fm mu" letter-spacing="0.8">LARAVEL · PHP · BLADE · TAILWIND</text>
+<rect x="12" y="676" width="776" height="1" class="slm"/>
 </svg>

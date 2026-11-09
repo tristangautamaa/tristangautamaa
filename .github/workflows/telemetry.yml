@@ -26,7 +26,9 @@ jobs:
         run: python3 scripts/fetch_data.py
 
       - name: Regenerate SVGs
-        run: python3 scripts/gen.py
+        run: |
+          python3 -m pip install --quiet fonttools brotli
+          python3 scripts/gen.py
 
       - name: Commit if anything changed
         run: |

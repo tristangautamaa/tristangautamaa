@@ -1,36 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 72" width="800" height="72" role="img" aria-label="Status: building. Forever learning. tristangautama.xyz, Jakarta, Indonesia">
-<title>Status: building. Forever learning. tristangautama.xyz, Jakarta, Indonesia</title>
-<style>
-text{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono","DejaVu Sans Mono",monospace}
-.fg{fill:#0d1117}.mu{fill:#57606a}.ac{fill:#0f766e}
-.ln{stroke:#0d1117}.lm{stroke:#8c959f}.la{stroke:#0f766e}
-.nf{fill:none}
-.h0{fill:#0d1117;fill-opacity:.07}.h1{fill:#0d1117;fill-opacity:.28}.h2{fill:#0d1117;fill-opacity:.5}.h3{fill:#0d1117;fill-opacity:.75}.h4{fill:#0d1117;fill-opacity:1}
-.tk{fill:#0d1117;fill-opacity:.08;stroke:#0d1117;stroke-width:1}
-.bar{fill:#0d1117}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 64" width="800" height="64" role="img" aria-label="tristangautama.xyz, Jakarta, Indonesia">
+<title>tristangautama.xyz, Jakarta, Indonesia</title>
+<style>@font-face{font-family:"Instrument Sans";font-weight:600;src:url(data:font/woff2;base64,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) format("woff2")}.fsb{font-family:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-weight:600}@font-face{font-family:"JetBrains Mono";font-weight:500;src:url(data:font/woff2;base64,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) format("woff2")}.fm{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-weight:500}
+.fg{fill:#233D4D}.mu{fill:#4F7690}.ac{fill:#C2570A}.acf{fill:#FE7F2D}
+.sfg{stroke:#233D4D}.slm{stroke:#233D4D;stroke-opacity:.2}.ffg{fill:#233D4D}.flm{fill:#233D4D;fill-opacity:.08}
 @media (prefers-color-scheme:dark){
-.fg{fill:#f0f6fc}.mu{fill:#8b949e}.ac{fill:#2dd4bf}
-.ln{stroke:#f0f6fc}.lm{stroke:#6e7681}.la{stroke:#2dd4bf}
-.h0{fill:#f0f6fc;fill-opacity:.08}.h1{fill:#f0f6fc;fill-opacity:.3}.h2{fill:#f0f6fc;fill-opacity:.52}.h3{fill:#f0f6fc;fill-opacity:.76}.h4{fill:#f0f6fc;fill-opacity:1}
-.tk{fill:#f0f6fc;fill-opacity:.1;stroke:#f0f6fc}
-.bar{fill:#f0f6fc}
+.fg{fill:#EAF1F6}.mu{fill:#6594B1}.ac{fill:#FE7F2D}
+.sfg{stroke:#EAF1F6}.slm{stroke:#EAF1F6;stroke-opacity:.2}.ffg{fill:#EAF1F6}.flm{fill:#EAF1F6;fill-opacity:.08}
 }
-@keyframes flow{to{stroke-dashoffset:-16}}
+
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes fadeup{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
-@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
 @keyframes rise{from{transform:scaleY(0)}to{transform:scaleY(1)}}
-.flow{stroke-dasharray:3 5;animation:flow 1.4s linear infinite}
-.cur{animation:blink 1.1s steps(1) infinite}
-.dot{animation:pulse 2s ease-in-out infinite}
-.gx{transform-box:fill-box;transform-origin:left center;animation:grow .9s ease-out both}
-.gy{transform-box:fill-box;transform-origin:center bottom;animation:rise .9s ease-out both}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes sweep{0%{transform:scaleX(.08)}70%,100%{transform:scaleX(1)}}
+@keyframes shimmer{from{transform:translateX(-120%)}to{transform:translateX(220%)}}
+@keyframes ring{from{stroke-dashoffset:var(--len)}to{stroke-dashoffset:0}}
+@keyframes dots{0%,80%,100%{opacity:.25}40%{opacity:1}}
+.floaty{animation:floaty 5s ease-in-out infinite}
+.fadeup{animation:fadeup .7s ease-out both}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.2,.9,.3,1.4) both}
+.pulse{animation:pulse 2s ease-in-out infinite}
+.blink{animation:blink 1.1s steps(1) infinite}
+.draw{stroke-dasharray:1;animation:draw 1.6s ease-out both}
+.rise{transform-box:fill-box;transform-origin:center bottom;animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.grow{transform-box:fill-box;transform-origin:left center;animation:grow 1s ease-out both}
+.sweep{transform-box:fill-box;transform-origin:left center;animation:sweep 3.2s ease-in-out infinite alternate}
+.shim{animation:shimmer 3.6s ease-in-out infinite}
+.ring{animation:ring 1.4s ease-out both}
+.dt{animation:dots 1.2s infinite}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
-<line x1="8" y1="10" x2="792" y2="10" class="ln" stroke-width="1.2" />
-<circle cx="22" cy="42" r="9" class="nf ln" stroke-width="1.2"/>
-<circle cx="22" cy="42" r="4" class="ac dot"/>
-<text x="44" y="38" class="fg" font-size="10.5" font-weight="700" letter-spacing="2" textLength="139.1" lengthAdjust="spacing">STATUS — BUILDING</text>
-<text x="44" y="56" class="mu" font-size="11" font-weight="400" textLength="112.2" lengthAdjust="spacing">forever learning.</text>
-<text x="792" y="38" class="fg" font-size="11" font-weight="400" text-anchor="end" textLength="297.0" lengthAdjust="spacing">tristangautama.xyz  ·  Jakarta, ID  ·  © 2026</text>
+<defs></defs>
+<rect x="12" y="8" width="776" height="1.5" class="slm"/>
+<circle cx="20" cy="40" r="4" class="acf pulse"/>
+<text x="36.0" y="44.0" font-size="13.5" class="fsb fg">tristangautama.xyz</text>
+<text x="788.0" y="44.0" font-size="11" class="fm mu" text-anchor="end">Jakarta, Indonesia · © 2026</text>
 </svg>

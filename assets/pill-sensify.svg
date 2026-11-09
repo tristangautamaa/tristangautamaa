@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 40" width="116" height="40" role="img" aria-label="SENSIFY">
+<title>SENSIFY</title>
+<style>@font-face{font-family:"JetBrains Mono";font-weight:700;src:url(data:font/woff2;base64,d09GMgABAAAAAAOEABAAAAAAByQAAAMqAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbIBwqBmA/U1RBVEwAXBEICoMwglUBNgIkAxILEgAEIAWEJgcgDAcbnQUILgZyMuxVYojNEvMwqBf5JRdeXQTVGtmzd2Eg9SFUQAqANZJm0EiWXFyivnIXa21fRBJz6VUdvUclMR1aFctET0R/esgxBBkWp0FB0OLvu3e4wfO/sCwFJ5v/52baWIB5fUw81LYt2mBjgfayjAKKurH5QMcSi882mJ15i6nfpmVmTjJJqUMJVAYkIZQVAhU1tgAzemyqBGQ5FAAY15YMthtzxaKtNRDDqOV5qqWHypAOppnAJDsc8xnCBxIVKHGYOnEkgHOaq2el/z/A/yo6AwGpbfpAcwQhlJdQGxatYdctnm1hsHR1fwVTDUKuPixEWewVaSZIf5AJKdgAARIy1IYTqA1vPFBVeUlZzUXEZRTVC2guzB+j+K2LKrKIwgT69RAF1UB5UB2ogPXAKUAOMlF3kmc4OpXO7VSNRmDgB1XKjJbTnQgqE0OKiYah4agYQipuB5XK0Non7qfIaHhq5/h8lBYdbL0tK519rHTofex43nd6YWPH58/39nFaxR3vKh58YfuzPtOex/YPHypljUrTjnudozcazaDNTLO/6ZvXQzVoWNFpYGe1b4mDbuqvEL8MWgm5b2v1pEdYrdVqrLr8rbpkpoh94zOlG7GSzW7Z2OAL3VMaE/LZtNZjUFdIrtQ75jK3dPEZbH2fdW5zZUOJsCxorec91jkTfWTpcAWaW5Rzo36eQrJ72XRRRdCcFz3O+ctG+K/w8c0uKr1Bt2EVnlaVooNXAAKpb37+cVqNLmvw3/IZ7gu+v7si8LvegU5Exb80Iv0QykogeDE7zYQYoprrScDTNNTkNMTYiYBAeZ3gQFCrKjkoEzkFeIgHobErSMr7Apm+PiHXNoRQRsNw8WW1jooAAyrHgUuEeQ6GFZPn+7FR48IoqLl9GxZNzWxBGOh6H1EK0PE9JoxtCdjQt2jNJkQaag0KkbMBtWRsaAvCb9uWGdSGTQiZmS1b5jY5aGlNLYIjbxvQGEKt0kqrjYz89vLlHm8AasWIgYaBnp5TQoBzsqkebrC3AaOVeMOmRcBFZDbPQqv66Z83bkvfikVDBahVfWtwQBHDN1XvRvHV/AgA) format("woff2")}.fmb{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-weight:700}
+.fg{fill:#233D4D}.mu{fill:#4F7690}.ac{fill:#C2570A}.acf{fill:#FE7F2D}
+.sfg{stroke:#233D4D}.slm{stroke:#233D4D;stroke-opacity:.2}.ffg{fill:#233D4D}.flm{fill:#233D4D;fill-opacity:.08}
+@media (prefers-color-scheme:dark){
+.fg{fill:#EAF1F6}.mu{fill:#6594B1}.ac{fill:#FE7F2D}
+.sfg{stroke:#EAF1F6}.slm{stroke:#EAF1F6;stroke-opacity:.2}.ffg{fill:#EAF1F6}.flm{fill:#EAF1F6;fill-opacity:.08}
+}
+
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes fadeup{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes rise{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes sweep{0%{transform:scaleX(.08)}70%,100%{transform:scaleX(1)}}
+@keyframes shimmer{from{transform:translateX(-120%)}to{transform:translateX(220%)}}
+@keyframes ring{from{stroke-dashoffset:var(--len)}to{stroke-dashoffset:0}}
+@keyframes dots{0%,80%,100%{opacity:.25}40%{opacity:1}}
+.floaty{animation:floaty 5s ease-in-out infinite}
+.fadeup{animation:fadeup .7s ease-out both}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.2,.9,.3,1.4) both}
+.pulse{animation:pulse 2s ease-in-out infinite}
+.blink{animation:blink 1.1s steps(1) infinite}
+.draw{stroke-dasharray:1;animation:draw 1.6s ease-out both}
+.rise{transform-box:fill-box;transform-origin:center bottom;animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.grow{transform-box:fill-box;transform-origin:left center;animation:grow 1s ease-out both}
+.sweep{transform-box:fill-box;transform-origin:left center;animation:sweep 3.2s ease-in-out infinite alternate}
+.shim{animation:shimmer 3.6s ease-in-out infinite}
+.ring{animation:ring 1.4s ease-out both}
+.dt{animation:dots 1.2s infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<defs></defs>
+<rect x=".5" y=".5" width="115" height="39" rx="20" fill="#233D4D" stroke="#6594B1" stroke-opacity=".5"/><path transform="translate(18 12)" d="M8 1l6 7-6 7-6-7z" fill="#FE7F2D"/><text x="43.0" y="25.0" font-size="10.5" class="fmb" fill="#EAF1F6" letter-spacing="1.6">SENSIFY</text>
+</svg>
