@@ -33,7 +33,7 @@ def dashboard():
     # ---- heading (adaptive colours, sits above the navy panel)
     head, hy = heading("03", "DASHBOARD", "Activity dashboard", "Refreshed weekly from GitHub")
     top = hy - 8
-    PH = 738
+    PH = 580
     b = [f'<g transform="translate(0 {top})">']
     b.append(f'<rect x=".5" y=".5" width="{W - 1}" height="{PH - 1}" rx="18" fill="{NAVY}" stroke="{GLACIER}" stroke-opacity=".4"/>')
 
@@ -181,40 +181,8 @@ def dashboard():
                  f'class="grow" style="animation-delay:{0.3 + i * 0.07:.2f}s"/>')
         b.append(T(dx + dw - 14, yy + 8, f"{v:,}", "m", 8.5, ICE, "end"))
 
-    # ---- work timeline (Gantt)
-    gy = 558
-    b.append(f'<rect x="{PX}" y="{gy}" width="{W - 2 * PX}" height="{PH - gy - 34}" rx="14" {CARD}/>')
-    b.append(T(PX + 18, gy + 28, "WORK TIMELINE", "mb", 10, ICE, ls=2))
-    t0, t1 = dt.date(2025, 11, 1), dt.date(2027, 3, 1)
-    ax0, ax1 = PX + 232, W - PX - 18
-    span = (t1 - t0).days
-
-    def X(d_):
-        return ax0 + (ax1 - ax0) * (d_ - t0).days / span
-
-    m = dt.date(2025, 11, 1)
-    while m < t1:
-        x = X(m)
-        b.append(f'<rect x="{x:.1f}" y="{gy + 40}" width="1" height="92" fill="{ICE}" fill-opacity=".07"/>')
-        if (m.month in (1, 4, 7, 10) or m == t0) and abs(x - X(D.SNAPSHOT)) > 70:
-            b.append(T(x + 3, gy + 36, f"{D.MONTH_ABBR[m.month - 1]} {str(m.year)[2:]}", "m", 8, GLACIER))
-        m = dt.date(m.year + (m.month == 12), m.month % 12 + 1, 1)
-    rows = [
-        ("Student", "Multimedia Nusantara University", dt.date(2025, 11, 1), t1, GLACIER, .55, False),
-        ("Data analyst intern", "Kawan Lama Group", dt.date(2026, 2, 1), D.SNAPSHOT, EMBER, 1, True),
-        ("Business development", "Sensify · part-time", dt.date(2026, 5, 1), D.SNAPSHOT, ICE, .85, True),
-    ]
-    for i, (role, org, s, e, col, op, _) in enumerate(rows):
-        yy = gy + 50 + i * 26
-        b.append(T(PX + 18, yy + 11, role, "sb", 11, ICE))
-        b.append(T(PX + 18 + tw(role, "sb", 11) + 8, yy + 11, org, "s", 9.5, GLACIER))
-        x0, x1 = X(s), X(e)
-        b.append(f'<rect x="{x0:.1f}" y="{yy}" width="{x1 - x0:.1f}" height="14" rx="7" fill="{col}" fill-opacity="{op}" class="grow" style="animation-delay:{0.3 + i * 0.15:.2f}s"/>')
-    nx = X(D.SNAPSHOT)
-    b.append(f'<rect x="{nx:.1f}" y="{gy + 42}" width="1.5" height="90" fill="{EMBER}"/><circle cx="{nx + .75:.1f}" cy="{gy + 42}" r="3.5" fill="{EMBER}" class="pulse"/>')
-    b.append(T(nx - 6, gy + 36, "TODAY", "mb", 8, EMBER, "end", ls=1))
     src = "Source: GitHub contribution calendar" + (", including private repositories" if D.INCLUDES_PRIVATE else "") + ". Counts only. Trend badge: last 90 days vs the 90 before."
     b.append(T(PX, PH - 11, src, "m", 8.5, GLACIER))
     b.append("</g>")
     body = f'<g>{head}</g>' + "".join(b)
-    return svg(W, top + PH, body, f"Activity dashboard: {D.TOTAL:,} GitHub contributions in the last 12 months across {D.ACTIVE} active days, monthly trend, language mix, daily heatmap, weekday pattern and work timeline")
+    return svg(W, top + PH, body, f"Activity dashboard: {D.TOTAL:,} GitHub contributions in the last 12 months across {D.ACTIVE} active days, monthly trend, language mix, daily heatmap and weekday pattern")

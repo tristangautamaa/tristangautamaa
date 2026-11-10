@@ -37,7 +37,7 @@
 
 <br/>
 
-<img src="assets/dashboard.svg" alt="03 dashboard: GitHub contributions over the last 12 months with monthly trend, language mix, daily heatmap, weekday pattern and a work timeline." width="100%" />
+<img src="assets/dashboard.svg" alt="03 dashboard: GitHub contributions over the last 12 months with monthly trend, language mix, daily heatmap and weekday pattern." width="100%" />
 
 <br/>
 
