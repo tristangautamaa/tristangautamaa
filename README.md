@@ -27,9 +27,11 @@
 
 <div align="center">
 
-<a href="https://migravia.id"><img src="assets/product-migravia.svg" alt="Migravia: immigration-services platform for visa, KITAS and KITAP cases in Indonesia. migravia.id" width="32%" /></a>
-<a href="https://sensify.id"><img src="assets/product-sensify.svg" alt="Sensify: AI-powered storefront for Indonesian brands. sensify.id" width="32%" /></a>
-<a href="https://griyaplast.shop"><img src="assets/product-griyaplast.svg" alt="Griyaplast: website for a plastic household-goods manufacturer in Surabaya. griyaplast.shop" width="32%" /></a>
+<a href="https://migravia.id"><img src="assets/product-migravia.svg" alt="Migravia: immigration-services platform for visa, KITAS and KITAP cases in Indonesia. migravia.id" width="100%" /></a>
+
+<a href="https://sensify.id"><img src="assets/product-sensify.svg" alt="Sensify: AI-powered storefront for Indonesian brands. sensify.id" width="100%" /></a>
+
+<a href="https://griyaplast.shop"><img src="assets/product-griyaplast.svg" alt="Griyaplast: website for a plastic household-goods manufacturer in Surabaya. griyaplast.shop" width="100%" /></a>
 
 </div>
 

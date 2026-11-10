@@ -30,7 +30,7 @@ def hero():
     b = []
     stats = [(f"{D.TOTAL:,}", "CONTRIBS · 12M"), (f"{D.ACTIVE}", "ACTIVE DAYS"), (f"{D.PUBLIC_REPOS}", "PUBLIC REPOS"), (f"{D.LONGEST}", "DAY STREAK")]
     size = round(min(84, 716 / tw("Tristan Gautama", "d", 1)), 1)
-    y_eyebrow = 126
+    y_eyebrow = 106
     y_name = y_eyebrow + size + 22
     y_sub = y_name + 52
     y_cards = y_sub + 52
@@ -47,16 +47,12 @@ def hero():
         f'<circle cx="700" cy="{H}" r="400" fill="url(#hE)"/><circle cx="40" cy="10" r="330" fill="url(#hG)"/></g>'
         f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="18" fill="none" stroke="{GLACIER}" stroke-opacity=".35"/>'
     )
-    # brand row
-    b.append(f'<rect x="28" y="26" width="38" height="38" rx="10" fill="{EMBER}"/>')
-    b.append(T(47, 51, "TG", "d", 14, NAVY, "middle"))
-    b.append(T(78, 41, "TRISTAN GAUTAMA", "mb", 11, ICE, ls=3))
-    b.append(T(78, 57, "tristangautama.xyz", "m", 10.5, GLACIER))
+    # availability pill (top-left)
     pill = "Data Analyst Intern · Kawan Lama Group"
     pw = tw(pill, "m", 10.5) + 40
-    b.append(f'<rect x="{772 - pw:.0f}" y="31" width="{pw:.0f}" height="28" rx="14" fill="{ICE}" fill-opacity=".06" stroke="{ICE}" stroke-opacity=".2"/>')
-    b.append(f'<circle cx="{772 - pw + 16:.0f}" cy="45" r="3.5" fill="{EMBER}" class="pulse"/>')
-    b.append(T(772 - pw + 28, 49, pill, "m", 10.5, ICE))
+    b.append(f'<rect x="28" y="28" width="{pw:.0f}" height="28" rx="14" fill="{ICE}" fill-opacity=".06" stroke="{ICE}" stroke-opacity=".2"/>')
+    b.append(f'<circle cx="44" cy="42" r="3.5" fill="{EMBER}" class="pulse"/>')
+    b.append(T(56, 46, pill, "m", 10.5, ICE))
     # eyebrow + headline + subtitle
     b.append(T(28, y_eyebrow, "DATA ANALYST + PRODUCT BUILDER", "mb", 11, EMBER, ls=3))
     b.append(T(26, y_name, "Tristan ", "d", size, ICE, cls="fadeup", extra='style="animation-delay:.1s"'))
